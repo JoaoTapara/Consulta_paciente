@@ -1,0 +1,40 @@
+create database bd_projeto2;
+
+use bd_projeto2;
+
+
+create table tb_usuario(
+  id_usuario int not null primary key auto_increment,
+  login varchar(20) not null,
+  nome varchar (80) not null,
+  senha varchar(5) not null,
+  tipo varchar (5) not null
+);
+
+insert into tb_usuario 
+(login,nome, senha, tipo)
+values
+('Maria', 'Maria da Silva', '1234', 'admin'),
+('Paulo', 'Paulo Oliveira', '4321', 'comum');
+
+create table tb_paciente(
+id_paciente int not null primary key auto_increment,
+paciente varchar(80) not null,
+tipo_sanguineo char(2) not null,
+fator_rh char (1) not null,
+convenio boolean not null
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
